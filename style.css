@@ -1,0 +1,129 @@
+@font-face {
+  font-family: "Entanglement";  
+  src: url("fonts/Entanglement-rgpRB.ttf") format("truetype"); 
+  font-style: normal; 
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "Chopsic";  
+  src: url("fonts/Chopsic-K6Dp.ttf") format("truetype"); 
+  font-style: normal; 
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "AloneinSpace";  
+  src: url("fonts/AloneInSpaceReguler-qZ2xr.ttf") format("truetype"); 
+  font-style: normal; 
+  font-weight: normal;
+}
+
+div.main {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  /*height: 100%;*/
+  background-image: url('/\images/bg2.gif');
+}
+
+div.submain {
+  height: 100%;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #252525cb;
+  border-radius: 50px;
+  margin-bottom: 40px;
+  padding-top: 20px;
+  padding-bottom: 50px;
+}
+
+table.showcase {
+  margin-left: auto;
+  margin-right: auto;
+  border-spacing: 15px;
+}
+
+table.showcase td {
+  width: 200px;
+  height: 250px;
+  max-width: 215px;
+  padding: 5px;
+  text-align: center;
+  background-color: #363636;
+  vertical-align: top;
+  border-radius: 5px;
+}
+
+table.showcase td img {
+  height: 200px;
+  width: 200px;
+}
+
+table.showcase td img:active {
+    position: relative;
+    width: 300px;
+    height: auto;
+    display: block;
+    z-index: 1;
+    padding-bottom: 10px;
+}
+
+table.showcase a.productTitle {
+  color: white;
+  font-family: AloneinSpace;
+  size: 36px;
+  text-decoration: none;
+}
+
+table.showcase a.productTitle:hover {
+  color: lightgray;
+}
+
+div.navigator {
+  background-color: black;
+  width: 100%;
+  height: 130px;
+  margin-bottom: 25px;
+  margin-top: -20px;
+  padding-bottom: 10px;
+}
+
+.abc {
+  text-align: center;
+}
+
+.abc img.logo {
+  height: 100%;
+}
+
+div.showcaseTitle {
+  text-align: center;
+  font-family: Chopsic;
+  color: white;
+  font-size: 36px;
+  padding-top: 20px;
+}
+
+div.navigator table {
+  width: 100%;
+  height: 100%;
+}
+
+div.navigator table td {
+  width: 20%;
+  height: 100%;
+}
+
+.basement {
+  padding-top: 16px;
+  margin-bottom: -16px;
+  width: 100%;
+  text-align: center;
+}
+
+.basement font {
+  color: white;
+}
