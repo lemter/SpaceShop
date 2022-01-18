@@ -1,13 +1,6 @@
 @font-face {
-  font-family: "AloneinSpace";  
-  src: url('\/fonts/AloneInSpaceReguler-qZ2xr.ttf') format("truetype"); 
-  font-style: normal; 
-  font-weight: normal;
-}
-
-@font-face {
-  font-family: "InfynyteBody";  
-  src: url('\/fonts/InfynyteBody-6ARg.ttf') format("truetype"); 
+  font-family: "Entanglement";  
+  src: url("\/fonts/Entanglement-rgpRB.ttf") format("truetype"); 
   font-style: normal; 
   font-weight: normal;
 }
@@ -19,177 +12,121 @@
   font-weight: normal;
 }
 
+@font-face {
+  font-family: "AloneinSpace";  
+  src: url("\/fonts/AloneInSpaceReguler-qZ2xr.ttf") format("truetype"); 
+  font-style: normal; 
+  font-weight: normal;
+}
+
+body {
+  background-repeat: round;
+}
+
 div.main {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url('/\images/bg2.gif');
-  background-repeat: repeat-y;
+  background-image: url('images/bg2.gif');
 }
 
-div.navigtaor {
-  background-color: black;
+/* navigator */
+.navbar {
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
+.navbar-brand {
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
+.nav-link {
+  font-size: 16px;
+}
+
+/* main part */
+.mm {
   width: 100%;
-  height: 130px;
-  margin-bottom: 25px;
-  margin-top: -20px;
+  padding: 130px;
+  background-color: #0000009A;
 }
 
-p.logo {
+.mm .title {
+  font-family: Chopsic;
+  color: white;
+  font-size: 36px;
+}
+
+.carousel {
+  width: 850px;
+  height: 100%;
+}
+
+.mm .second-block {
+  text-align: left;
+  margin-left: 8px;
+}
+
+.mm .buy-butts {
+  width: max-content;
+}
+
+.carousel-inner {
+  height: 500px;
+}
+
+img.d-block {
+  height: 500px;
+  object-fit: contain;
+}
+
+@media (max-width: 1380px) {
+  .carousel {
+    width: 100%;
+  }
+  .mm .title {
+    text-align: center;
+  }
+  .mm .second-block {
+    margin-top: 16px;
+    margin-left: 0px;
+  }
+  .mm .description {
+    font-family: Chopsic;
+    color: white;
+    padding-right: 12%;
+  }
+}
+
+.mm .description {
+  font-family: Chopsic;
+  color: white;
+  position: absolute;
+  padding-right: 6%
+}
+
+.mm .price {
+  font-family: Chopsic;
+  color: rgb(250, 77, 77);
+  margin-top: 200%;
+}
+
+/* footer */
+.footer {
+  width: 100%;
+  height: 80px;
+  background-color: #212529;
   text-align: center;
-  height: 100%;
+  display: table;
 }
 
-p.logo img.logo {
-  height: 100%;
-}
-
-div.submain {
-  width: 80%;
-  margin-left: auto;
-  margin-right: auto;
-  background-color: #252525cb;
-  border-radius: 50px;
-  margin-bottom: 40px;
-  padding-top: 20px;
-  padding-bottom: 50px;
-}
-
-.productName {
+.footer font {
+  display: table-cell;
+  vertical-align: middle;
   color: white;
-  font-family: AloneinSpace;
-  font-size: 32px;
-  padding: 32px;
-}
-
-/* начало галерея */
-
-.wrapper {
-  margin-left: 32px;
-  overflow: hidden;
-  width: 500px;
-}
-.min {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  float: left;
-}
-.min td {
-  padding: 0;
-  margin: 0;
-  /* float: left; */
-  clear: both;
-}
-.min td a {
-  display: block;
-  padding: 0 5px 21px 0;
-}
-.min td a img {
-  display: block;
-  width: 94px;
-  height: 63px;
-}
-.images {
-  width: 500px;
-  height: 350px;
-  overflow: hidden;
-}
-.images img {
-  width: 500px;
-  height: 350px;
-}
-
-/* конец галерея */
-
-div.navigator {
-  background-color: black;
-  width: 100%;
-  height: 130px;
-  margin-bottom: 25px;
-  margin-top: -20px;
-  padding-bottom: 10px;
-}
-
-div.navigator table {
-  width: 100%;
-  height: 100%;
-}
-
-div.navigator table td {
-  width: 20%;
-  height: 100%;
-}
-
-.rightBlock {
-  vertical-align: top;
-  padding-left: 16px;
-  width: 100%;
-  padding-right: 16px;
-}
-
-div.description {
-  vertical-align: top;
-  color: white;
-  max-height: 300px;
-  height: 300px;
-  font-family: InfynyteBody;
-  
-}
-
-div.price {
-  color: white;
-  font-size: 32px;
-  height: 48px;
-  max-height: 48px;
-  text-align: center;
-  text-shadow: 0 0 10px #6a17de,0 0 20px #6a17de,0 0 30px #6a17de,0 0 40px #6a17de;
-  font-family: InfynyteBody;
-}
-
-div.purchase {
-  max-height: 100px;
-  height: 48px;
-}
-
-div.purchase .button {
-  width: 100%;
-  height: 48px;
-  background-color: white;
-  border-radius: 32px;
-  display: flex;
-  align-items: center;
-  padding-top: 2px;
-}
-
-div.purchase .button font {
-  font-size: 26px;
-  margin-left: auto;
-  margin-right: auto;
-  -moz-user-select: none;
-  -khtml-user-select: none;
-  -webkit-user-select: none;
-  user-select: none;
-  font-family: AloneinSpace;
-}
-
-div.purchase .button:hover {
-  background-color: lightgray;
-}
-
-div.purchase .button:active {
-  background-color: gray;
-}
-
-.basement {
-  padding-top: 16px;
-  margin-bottom: -16px;
-  width: 100%;
-  text-align: center;
-}
-
-.basement font {
-  color: white;
+  font-family: var(--bs-body-font-family);
+  font-size: 12px;
 }
