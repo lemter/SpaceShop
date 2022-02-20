@@ -21,6 +21,7 @@
 
 body {
   background-repeat: round;
+  background: url("/\images/bg2.gif");
 }
 
 div.main {
